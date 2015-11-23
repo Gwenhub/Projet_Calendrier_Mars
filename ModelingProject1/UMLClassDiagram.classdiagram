@@ -102,6 +102,9 @@
           <operation Id="0b6b84cc-4e6d-4e4d-be40-1b2c4956d655" name="getStatut" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="a8fe0c64-93c1-4696-8609-1103cb6f30e2" />
           </operation>
+          <operation Id="32f2a5cf-846b-4d76-b5b9-599cc77efdc1" name="ajouterCR" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a3145276-571f-46b1-bd0d-76e8ee631a38" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
