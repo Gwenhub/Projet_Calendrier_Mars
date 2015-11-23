@@ -1,0 +1,26 @@
+﻿<Page x:Class="ProjetInfo2a.Recherche"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      Height="800" Width="600"
+	Title="Recherche" ShowsNavigationUI="False">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Recherche" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Width="600"><Run Language="fr-fr" Text="Entrez un mot-clé : "/></TextBlock>
+        <TextBox  x:Name="champs_mot_cle"  VerticalAlignment="Top"  Margin="0,250,0,0" TextWrapping="Wrap"  MaxWidth="300" Controls:TextBoxHelper.ClearTextButton="True" FontSize="16" TextAlignment="Center" Height="36" BorderBrush="#FF34495E" SelectionBrush="#FF34495E"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Width="600"><Run Language="fr-fr" Text="ou le nom d'une activité : "/></TextBlock>
+        <ComboBox x:Name="nom_activite" Margin="0,375,0,0" VerticalAlignment="Top" Height="36" Width="300" HorizontalAlignment="Center" BorderBrush="#FF34495E">
+            <ComboBoxItem Content="Sélectionnez une activité" IsEnabled="False"/>
+            <ComboBoxItem Content="Living"/>
+            <ComboBoxItem Content="Science"/>
+            <ComboBoxItem Content="Maintenance"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Center" Margin="0,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Width="600"><Run Language="fr-fr" Text="Précisez une période : "/></TextBlock>
+        <TextBox HorizontalAlignment="Center" Height="21" Margin="210,500,330,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" BorderBrush="#FF34495E"/>
+        <TextBlock HorizontalAlignment="Center" Margin="150,500,395,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="55"><Run Language="fr-fr" Text="Du : "/></TextBlock>
+        <TextBox HorizontalAlignment="Center" Height="21" Margin="395,500,150,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" BorderBrush="#FF34495E"/>
+        <TextBlock HorizontalAlignment="Center" Margin="334,500,211,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="55"><Run Language="fr-fr" Text="Au : "/></TextBlock>
+        <Button Content="Rechercher" HorizontalAlignment="Center" Margin="0,600,0,0" VerticalAlignment="Top" Width="300" FontSize="18" BorderBrush="#FF34495E" Foreground="#FF34495E" Background="#FF81CFE0" />
+    </Grid>
+</Page>

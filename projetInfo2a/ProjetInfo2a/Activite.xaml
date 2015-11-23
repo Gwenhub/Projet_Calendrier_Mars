@@ -1,0 +1,18 @@
+﻿<Page x:Class="ProjetInfo2a.Activite"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      Height="800" Width="600"
+	Title="Activite" ShowsNavigationUI="False">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Activité" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
+        <Button Content="Voir Carte" Name="Consulter_Carte" Margin="0,495,0,269" VerticalAlignment="Center" Width="303" Cursor="None" Background="#FF81CFE0" FontSize="18" FontWeight="Bold" BorderBrush="#FF34495E" Foreground="#FF34495E" HorizontalAlignment="Center" Click="Bouton_Carte"/>
+        <DataGrid HorizontalAlignment="Center" Margin="148,192,148,0" VerticalAlignment="Top" Width="304"/>
+        <Button Content="Supprimer" x:Name="Supprimer_Activite" Margin="0,634,335,130" VerticalAlignment="Center" Width="265" Cursor="None" Background="#FFF9690E" FontSize="18" FontWeight="Bold" BorderBrush="#FF34495E" Foreground="#FF34495E" HorizontalAlignment="Center"/>
+        <Button Content="Enregistrer" x:Name="Enregistrer_Activite" Margin="335,634,0,130" VerticalAlignment="Center" Width="265" Cursor="None" Background="#FF87D37C" FontSize="18" FontWeight="Bold" BorderBrush="#FF34495E" Foreground="#FF34495E" HorizontalAlignment="Center"/>
+
+
+
+    </Grid>
+</Page>

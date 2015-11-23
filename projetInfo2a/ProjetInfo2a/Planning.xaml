@@ -1,0 +1,45 @@
+﻿<Page x:Class="ProjetInfo2a.Planning"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      Height="800" Width="600"
+	Title="Planning" ShowsNavigationUI="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="483*"/>
+            <RowDefinition Height="317*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Planning" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
+        <TextBlock HorizontalAlignment="Center" Margin="24,200,24,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center"><Run Language="fr-fr" Text="Vous pouvez consulter le planning sur les 500 jours de votre mission. "/></TextBlock>
+        <Label Content="J-1" HorizontalAlignment="Left" Margin="-135,292,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-2" HorizontalAlignment="Left" Margin="-10,292,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-3" HorizontalAlignment="Left" Margin="115,292,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"></Label>
+        <Label Content="J-4" HorizontalAlignment="Left" Margin="240,292,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-5" HorizontalAlignment="Left" Margin="365,292,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-6" HorizontalAlignment="Left" Margin="490,292,-10,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-7" HorizontalAlignment="Right" Margin="0,292,-135,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label Content="J-8" HorizontalAlignment="Left" Margin="-135,417,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-9" HorizontalAlignment="Left" Margin="-10,417,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-10" HorizontalAlignment="Left" Margin="115,417,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF6C7A89" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-11" HorizontalAlignment="Left" Margin="240,417,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF2ECC71" Foreground="White" FontSize="20" FontWeight="Bold" MouseDoubleClick="AfficherJourJ" Grid.RowSpan="2"/>
+        <Label Content="J-12" HorizontalAlignment="Left" Margin="365,417,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-13" HorizontalAlignment="Left" Margin="490,417,-10,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-14" HorizontalAlignment="Right" Margin="0,417,-135,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="J-15" HorizontalAlignment="Left" Margin="-135,59,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-16" HorizontalAlignment="Left" Margin="-10,59,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-17" HorizontalAlignment="Left" Margin="115,59,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-18" HorizontalAlignment="Left" Margin="240,59,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-19" HorizontalAlignment="Left" Margin="365,59,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-20" HorizontalAlignment="Left" Margin="490,59,-10,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="J-21" HorizontalAlignment="Right" Margin="0,59,-135,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <Image Margin="-273,449,818,0" Source="previous.png" VerticalAlignment="Top" Stretch="Fill" RenderTransformOrigin="0.275,0.725" Height="55" Grid.RowSpan="2" Width="55"/>
+        <Image Margin="818,449,-273,0" Grid.RowSpan="2" Source="next.png" VerticalAlignment="Top" Stretch="Fill" Height="55" RenderTransformOrigin="0.275,0.725"/>
+        <Image Height="32" Source="astronaut.png" Stretch="Fill" Width="32" Margin="70,270,0,0"/>
+
+
+
+
+
+    </Grid>
+</Page>
