@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<informations>
+	<lieu>
+		<carte image="carte.png"/>
+		<position latitude="136" longitude="42"/>
+	</lieu>
+	<equipage>
+		<effectif nb="3"/>
+		<astronautes>
+			<astronaute nom="John Doe"/>
+			<astronaute nom="Bill Smith"/>
+			<astronaute nom="Mary Black"/>
+		</astronautes>
+	</equipage>
+	<activites>
+		<activite categorie="Living" nom="Eating"/>
+		<activite categorie="Living" nom="Sleeping"/>
+		<activite categorie="Living" nom="Entertainment"/>
+		<activite categorie="Living" nom="Private"/>
+		<activite categorie="Living" nom="Health control"/>
+		<activite categorie="Living" nom="Medical act"/>
+		<activite categorie="Science" sous-categorie="Exploration" nom="Space suit"/>
+		<activite categorie="Science" sous-categorie="Exploration" nom="Vehicle"/>
+		<activite categorie="Science" nom="Briefing"/>
+		<activite categorie="Science" nom="Debriefing"/>
+		<activite categorie="Science" nom="Inside experiment"/>
+		<activite categorie="Science" nom="Outside experiment"/>
+		<activite categorie="Maintenance" nom="Cleaning"/>
+		<activite categorie="Maintenance" nom="LSS air system"/>
+		<activite categorie="Maintenance" nom="LSS water system"/>
+		<activite categorie="Maintenance" nom="LSS food system"/>
+		<activite categorie="Maintenance" nom="Power systems"/>
+		<activite categorie="Maintenance" nom="Space suit"/>
+		<activite categorie="Maintenance" nom="Other"/>
+		<activite categorie="Communication" nom="Sending message"/>
+		<activite categorie="Communication" nom="Receiving message"/>
+		<activite categorie="Repair" nom="LSS"/>
+		<activite categorie="Repair" nom="Power systems"/>
+		<activite categorie="Repair" nom="Communication systems"/>
+		<activite categorie="Repair" nom="Propulsion systems"/>
+		<activite categorie="Repair" nom="Habitat"/>
+		<activite categorie="Repair" nom="Space suit"/>
+		<activite categorie="Repair" nom="Vehicle"/>
+		<qctivite categorie="Emergency" nom="Emergency"/>
+	</activites>
+	<journeeDefaut>
+		<creneau hdebut='0' hfin='7'>
+			<activite categorie="Living" nom="Sleeping"/>
+		</creneau>
+		<creneau hdebut='7' hfin='8'>
+			<activite categorie="Living" nom="Eating"/>
+		</creneau>
+		<creneau hdebut='8' hfin='12'>
+			<activite categorie="Living" nom="Private"/>
+		</creneau>
+		<creneau hdebut='12' hfin='14'>
+			<activite categorie="Living" nom="Eating"/>
+		</creneau>
+		<creneau hdebut='14' hfin='19'>
+			<activite categorie="Living" nom="Private"/>
+		</creneau>
+		<creneau hdebut='19' hfin='21'>
+			<activite categorie="Living" nom="Eating"/>
+		</creneau>
+		<creneau hdebut='21' hfin='23'>
+			<activite categorie="Living" nom="Private"/>
+		</creneau>
+		<creneau hdebut='23' hfin='24.40'>
+			<activite categorie="Living" nom="Sleeping"/>
+		</creneau>
+	</journeeDefaut>
+</informations>
