@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <informations>
-	<lieu>
-		<carte image="carte.png"/>
+	<lieu nom="Iron Valley">
+		<carte image="carte.png" echelle="30"/>
 		<position latitude="136" longitude="42"/>
 	</lieu>
-	<equipage>
+	<astronautes>
 		<effectif nb="3"/>
-		<astronautes>
 			<astronaute nom="John Doe"/>
 			<astronaute nom="Bill Smith"/>
 			<astronaute nom="Mary Black"/>
-		</astronautes>
-	</equipage>
+	</astronautes>
 	<activites>
 		<activite categorie="Living" nom="Eating"/>
 		<activite categorie="Living" nom="Sleeping"/>

@@ -574,6 +574,16 @@ les autres lieu sont donc localisés par rapport à la base, grace à leurs coor
           </operation>
           <operation Id="528889d4-6053-468e-8ca1-2fbd13bb3d52" name="getNom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4ec4f928-7581-4507-a5c1-506fa3ff0e6b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="16f704f2-5996-4c36-b5e7-41e167d911e4" direction="Return">
+                  <elementDefinition Id="803fc3bd-3b44-4f4d-9263-f085fa84461e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a7e25cb-a0cb-4284-8d47-91aa4665b05c" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="3a78cacb-8c63-4494-a7f0-b63b5be20a7c" name="setNom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="10072772-b43c-4d7f-b467-d8367add42e7" />
@@ -581,6 +591,16 @@ les autres lieu sont donc localisés par rapport à la base, grace à leurs coor
               <operationHasOwnedParameters>
                 <parameter Id="0e70afab-f7b7-4e09-af84-e6c0e21a97a9" name="String newNom" direction="In" isUnique="false">
                   <elementDefinition Id="3d6ec253-66f5-4010-9287-55914ee75055" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="17543e5d-8a34-465e-bf4f-bd57cfdebbc0" name="setNom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="67db88cc-6986-433f-8e3f-c00ef2b9d159" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6b3b3ea6-a43b-47c0-820c-18743e40c84b" name="String newNom" direction="In" isUnique="false">
+                  <elementDefinition Id="5dc84689-330b-4161-8345-b49fcedf1e0c" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -651,6 +671,11 @@ les autres lieu sont donc localisés par rapport à la base, grace à leurs coor
     <packageHasNamedElement>
       <referencedType Id="d673943a-bc3c-47a9-a110-a984187cdf28" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
         <elementDefinition Id="56e16819-89e4-49d7-9b3a-8c2b1c68a0ab" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6a7e25cb-a0cb-4284-8d47-91aa4665b05c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
