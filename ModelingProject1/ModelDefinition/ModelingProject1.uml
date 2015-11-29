@@ -189,6 +189,44 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="3d43ff4f-1430-4f02-8b4b-5d0a813d6af8"
+            isDerived="false"
+            sourceEndRoleName="JourDefaut"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d0900ab5-c771-4a21-9852-9aab16379a41"
+              LastKnownName="Mission"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40a8c5e1-fb8c-4cbb-9638-ee6c0d9a0cba"
+                  name="JourDefaut"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab74d78d-3b9a-4125-a4e4-9fdf3512e473"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -263,7 +301,17 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9beb9dc9-749e-489f-939c-c9471e851fc1"
+                  name="Activite act"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="e8fceb83-a30b-4cf4-b94e-21aab313e849"
             name="supprActivite"
@@ -382,8 +430,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="56e16819-89e4-49d7-9b3a-8c2b1c68a0ab"
-                LastKnownName="Time"
+                Id="87ace577-f64b-47b9-8aa8-61358740f19a"
+                LastKnownName="double"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -401,8 +449,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="56e16819-89e4-49d7-9b3a-8c2b1c68a0ab"
-                LastKnownName="Time"
+                Id="87ace577-f64b-47b9-8aa8-61358740f19a"
+                LastKnownName="double"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -547,8 +595,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="56e16819-89e4-49d7-9b3a-8c2b1c68a0ab"
-                      LastKnownName="Time"
+                      Id="87ace577-f64b-47b9-8aa8-61358740f19a"
+                      LastKnownName="double"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -571,8 +619,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="56e16819-89e4-49d7-9b3a-8c2b1c68a0ab"
-                      LastKnownName="Time"
+                      Id="87ace577-f64b-47b9-8aa8-61358740f19a"
+                      LastKnownName="double"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -590,8 +638,8 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="4a27d633-9042-4ca9-805b-d89ca72c840b"
-                  name="Time newHdeb"
+                  Id="7ff94851-55cd-4485-99e9-750e086feaf7"
+                  name="double newHdeb"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -608,8 +656,8 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c17365b7-6c10-4903-879b-921ee283d248"
-                  name="Time newHfin"
+                  Id="8259bab2-5959-44eb-a39e-7b3f9dc7a7d5"
+                  name="double newHfin"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -956,8 +1004,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b7a0bdd9-4845-4281-9293-3d03a52f69c1"
-                LastKnownName="List&lt;String"
+                Id="3a2e83dd-10c7-4640-931c-a6c848b55406"
+                LastKnownName="List&lt;String&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -1020,6 +1068,25 @@ C'est en le sérialisant (?) que l'on va remplir les autres champs de l'objet Mi
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="5a3171d7-9c09-43d8-b1a5-226d02bbbaa8"
+            name="DureeEnJours"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1064,8 +1131,8 @@ C'est en le sérialisant (?) que l'on va remplir les autres champs de l'objet Mi
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="d43e303f-3100-40fc-945e-58573ca9a3e1"
-                      LastKnownName="List&lt;Activite&gt;"
+                      Id="3a2e83dd-10c7-4640-931c-a6c848b55406"
+                      LastKnownName="List&lt;String&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1117,6 +1184,48 @@ C'est en le sérialisant (?) que l'on va remplir les autres champs de l'objet Mi
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2950a9bb-4760-4c82-86af-4c48431cb4a9"
+            name="getDuree"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ef9ee775-575f-4953-ae89-3060ca4c9eea"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d8ab8a9c-dd76-46ae-985c-35d2f2a4114e"
+            name="setDuree"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e66ca7b4-fed0-4a9c-a367-97fc3e434b8b"
+                  name="Integer nbJours"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
