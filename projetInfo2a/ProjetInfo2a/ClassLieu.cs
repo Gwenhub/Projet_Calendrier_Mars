@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetInfo2a
 {
-    class Lieu
+    class ClassLieu
     {
         private String _carte;
         private int _echelleMpx;

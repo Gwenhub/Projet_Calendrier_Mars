@@ -8,16 +8,17 @@ using System.Xml;
 
 namespace ProjetInfo2a
 {
-    class Mission
+    class ClassMission
     {
-        private List<Activite> _activites;
+        private List<ClassActivite> _activites;
         private int _nbAstraunautes;
-        private List<String> _astonautes;
-        private Lieu _lieu;
+        private List<String> _astronautes;
+        private ClassLieu _lieu;
         private int _jourJ;
         private DateTime _t0;
-        private Jour _journeeDefaut;
+        private ClassJour _journeeDefaut;
 
+        // methode de désérialisation globale qui appelle les methodes de chaque champ de Mission
         public void recupXML()
         {
             XmlDocument xmlDoc = new XmlDocument();
@@ -37,9 +38,10 @@ namespace ProjetInfo2a
 
         }
 
+        // désérialisation de <lieu>
         private void load_lieu(XmlDocument doc)
         {
-            _lieu = new Lieu();
+            _lieu = new ClassLieu();
             // on crée un noeud pour la balise lieu
             XmlNode node = doc.SelectSingleNode("/informations/lieu");
 
@@ -61,32 +63,58 @@ namespace ProjetInfo2a
             node = doc.SelectSingleNode("/informations/lieu/position");
             xml_attr = node.Attributes["longitude"];
             XmlAttribute xml_attr2 = node.Attributes["latitude"];
-            _lieu.setPosition(xml_attr.Value, xml_attr2.Value);    
+            _lieu.setPosition(xml_attr.Value, xml_attr2.Value);
         }
 
+        // désérialisation de <activites>
         private void load_activites(XmlDocument doc)
         {
-            _activites = new List<Activite>();
+            _activites = new List<ClassActivite>();
             XmlNodeList nl = doc.SelectNodes("/informations/activites/activite");
             foreach (XmlNode node in nl) // pour chaque activite de activites
             {
                 //on recupere sa categorie dans l'attribut de la balise du .xml
                 XmlAttribute xml_attr = node.Attributes["categorie"];
-                //on instancie un objet Activite
-                Activite activite = new Activite();
+                //on instancie un objet ClassActivite
+                ClassActivite activite = new ClassActivite();
                 //dont on affecte la propriété _categorie avec l'attribut qu'on vient de récup
-                activite._categorie = xml_attr.Value;
+                activite.setCategorie(xml_attr.Value);
 
                 xml_attr = node.Attributes["sous-categorie"];
-                activite._categorie += " / "+xml_attr.Value;
+                activite.setCategorie(activite.getCategorie() + " / " + xml_attr.Value);
 
                 //idem pour l'attribut nom 
                 xml_attr = node.Attributes["nom"];
-                activite._nom = xml_attr.Value;
+                activite.setNom(xml_attr.Value);
 
-                // on ajoute ce nouveau client à la liste de clients
+                // on ajoute l'activité à la liste d'activités de la mission
                 _activites.Add(activite);
             }
         }
+
+        //désérialisation de <astonautes>
+        private void load_astronautes(XmlDocument doc)
+        {
+            _astronautes = new List<String>();
+            XmlNodeList nl = doc.SelectNodes("/informations/astronautes/astronaute");
+            foreach (XmlNode node in nl)
+            {
+                String astronaute;
+                XmlAttribute xml_attr = node.Attributes["nom"];
+                astronaute=xml_attr.Value;
+
+                _astronautes.Add(astronaute);
+            }
+            _nbAstraunautes = _astronautes.Count(); 
+        }
+
+        private void load_journeeDefaut(XmlDocument doc)
+        {
+            _journeeDefaut = new ClassJour();
+
+        }
+
+
+
     }
 }

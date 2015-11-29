@@ -62,6 +62,9 @@
     <Compile Include="Activite.xaml.cs">
       <DependentUpon>Activite.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ClassActivite.cs" />
+    <Compile Include="ClassCompteRendu.cs" />
+    <Compile Include="ClassJour.cs" />
     <Compile Include="Compte_Rendu.xaml.cs">
       <DependentUpon>Compte_Rendu.xaml</DependentUpon>
     </Compile>
@@ -71,7 +74,8 @@
     <Compile Include="Jour.xaml.cs">
       <DependentUpon>Jour.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs" />
+    <Compile Include="ClassLieu.cs" />
+    <Compile Include="ClassMission.cs" />
     <Compile Include="Recherche.xaml.cs">
       <DependentUpon>Recherche.xaml</DependentUpon>
     </Compile>
