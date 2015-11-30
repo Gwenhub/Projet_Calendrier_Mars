@@ -5,7 +5,7 @@
       Height="800" Width="600"
 	Title="Recherche" ShowsNavigationUI="False">
 
-    <Grid Background="White">
+    <Grid Background="White" Margin="-390,32,-390,0">
         <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Recherche" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Width="600"><Run Language="fr-fr" Text="Entrez un mot-clé : "/></TextBlock>
         <TextBox  x:Name="champs_mot_cle"  VerticalAlignment="Top"  Margin="0,250,0,0" TextWrapping="Wrap"  MaxWidth="300" Controls:TextBoxHelper.ClearTextButton="True" FontSize="16" TextAlignment="Center" Height="36" BorderBrush="#FF34495E" SelectionBrush="#FF34495E"/>
