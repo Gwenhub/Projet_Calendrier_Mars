@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/Extensions/Microsoft/Visualization and Modeling Feature Pack/2.0/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2015-11-30T10:39:06" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="TemplateFilePath = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Visualization and Modeling Feature Pack\2.0\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Visualization and Modeling Feature Pack\2.0\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-11-30T10:39:06" Importance="Medium" Text="ModelingProject1's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ModelingProject1::Jour' -  (Class), 'ModelingProject1::Activite' -  (Class), 'ModelingProject1::CompteRendu' -  (Class), 'ModelingProject1::Mission' -  (Class), 'ModelingProject1::Lieu' -  (Class) " />
+  <Message Timestamp="2015-11-30T10:39:10" Importance="Medium" Text="Project Added: C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-11-30T10:39:10" Importance="Medium" Text="'ModelingProject1::Jour' -  (Class) : success (file created) - C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\GeneratedCode\Jour.cs" />
+  <Message Timestamp="2015-11-30T10:39:10" Importance="Medium" Text="'ModelingProject1::Activite' -  (Class) : success (file created) - C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\GeneratedCode\Activite.cs" />
+  <Message Timestamp="2015-11-30T10:39:10" Importance="Medium" Text="'ModelingProject1::CompteRendu' -  (Class) : success (file created) - C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\GeneratedCode\CompteRendu.cs" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Medium" Text="'ModelingProject1::Mission' -  (Class) : success (file created) - C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\GeneratedCode\Mission.cs" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Medium" Text="'ModelingProject1::Lieu' -  (Class) : success (file created) - C:\Users\fpesle.ENSC\Documents\GitHub\Projet_Calendrier_Mars\ModelingProject1Lib\GeneratedCode\Lieu.cs" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="TemplateFilePath = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Visualization and Modeling Feature Pack\2.0\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\Visualization and Modeling Feature Pack\2.0\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Medium" Text="ModelingProject1's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ModelingProject1::Jour' -  (Class), 'ModelingProject1::Activite' -  (Class), 'ModelingProject1::CompteRendu' -  (Class), 'ModelingProject1::Mission' -  (Class), 'ModelingProject1::Lieu' -  (Class) " />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="'ModelingProject1::Jour' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="'ModelingProject1::Activite' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="'ModelingProject1::CompteRendu' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-11-30T10:39:11" Importance="Diagnostic" Text="'ModelingProject1::Mission' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::Lieu' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="The selection included 6 elements which were not bound to a template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="Diagnostic" Text="'ModelingProject1::' -  (Association): no bound template." />
+  <Message Timestamp="2015-11-30T10:39:12" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
