@@ -27,6 +27,33 @@ namespace ProjetInfo2a
             initialisePlanning();
         }
 
+        // accesseurs
+        public virtual List<String> getActivites()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual int getJourJ()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual DateTime getT0()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual int getDuree()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual void setDuree(int nbJours)
+        {
+            throw new System.NotImplementedException();
+        }
+
+
         // désérialisation globale qui appelle les methodes de chaque champ de Mission
         public void chargerInfo()
         {
@@ -85,13 +112,13 @@ namespace ProjetInfo2a
             _lieu.setCarte(xml_attr.Value);
 
             xml_attr = node.Attributes["echelle"];
-            _lieu.setEchelle(xml_attr.Value);
+            _lieu.setEchelle(int.Parse(xml_attr.Value));
 
             //idem pour la balise position de lieu
             node = doc.SelectSingleNode("/informations/lieu/position");
             xml_attr = node.Attributes["longitude"];
             XmlAttribute xml_attr2 = node.Attributes["latitude"];
-            _lieu.setPosition(xml_attr.Value, xml_attr2.Value);
+            _lieu.setPosition(double.Parse(xml_attr.Value), double.Parse(xml_attr2.Value));
         }
 
         // désérialisation de <activites>
@@ -144,14 +171,14 @@ namespace ProjetInfo2a
             {
                 ClassActivite activite = new ClassActivite();
                 XmlAttribute xml_attr = node.Attributes["categorie"];
-                activite.setCategorie(xml_attr);
+                activite.setCategorie(xml_attr.Value);
                 xml_attr = node.Attributes["nom"];
                 activite.setCategorie(activite.getCategorie() + " / " + xml_attr);
 
                 xml_attr = node.Attributes["hdebut"];
-                activite.setHeureDeb(xml_attr);
+                activite.setHeureDeb(int.Parse(xml_attr.Value));
                 xml_attr = node.Attributes["hfin"];
-                activite.setHeureFin(xml_attr);
+                activite.setHeureFin(int.Parse(xml_attr.Value));
 
                 _journeeDefaut.ajouterActivite(activite);
             }

@@ -11,17 +11,10 @@ using System.Text;
 
 public class Mission
 {
-	private List<String> Astronautes
-	{
-		get;
-		set;
-	}
+	private List<String> Astronautes;
 
-	private List<String> Activites
-	{
-		get;
-		set;
-	}
+	private List<String> Activites;
+	
 
 	/// <summary>
 	/// adresse mémoire du fichier XML d'informations.
