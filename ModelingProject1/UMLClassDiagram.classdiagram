@@ -72,20 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="b4adb9f5-7881-4444-8d59-87a241c1c274">
-      <profileInstance Id="20abe14e-4e25-4d60-87cf-a465f13fde87" name="CSharpProfile">
-        <elementDefinition Id="9bd502d5-12d1-4541-967b-acdd1e8ccc7d" />
-      </profileInstance>
-      <elementDefinition Id="902a1e61-315a-4702-8c31-b0344b6eca6b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="ca288de4-9ef8-4d11-a3f2-c2b66d611958">
-      <profileInstance Id="88cb6e31-e47b-49b8-80f6-cb1577af7429" name="TextTemplateBindings">
-        <elementDefinition Id="0e3cb118-fa80-40f4-8e2f-857b2ad7123c" />
-      </profileInstance>
-      <elementDefinition Id="d7e6d1d6-1442-4d88-9a4f-3e2231f9a312" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="9c514631-f948-44fe-8b3c-44dca7020b68" name="Jour" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -299,7 +285,7 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="3ba74f9f-2838-48ed-9d67-912ae0d51314" name="sortieExte" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="3ba74f9f-2838-48ed-9d67-912ae0d51314" name="getSortieExte" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="3e6d1a3a-9b9d-4e2c-a59a-a8f492971cbb" name="method" profile="CSharpProfile">
                 <elementDefinition Id="f79afbcc-5b99-422c-9742-e101c7e57f53" />
@@ -3051,6 +3037,18 @@ les autres lieu sont donc localisés par rapport à la base, grace à leurs coor
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b4adb9f5-7881-4444-8d59-87a241c1c274">
+        <profileInstance Id="20abe14e-4e25-4d60-87cf-a465f13fde87" name="CSharpProfile">
+          <elementDefinition Id="9bd502d5-12d1-4541-967b-acdd1e8ccc7d" />
+        </profileInstance>
+        <elementDefinition Id="902a1e61-315a-4702-8c31-b0344b6eca6b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ca288de4-9ef8-4d11-a3f2-c2b66d611958">
+        <profileInstance Id="88cb6e31-e47b-49b8-80f6-cb1577af7429" name="TextTemplateBindings">
+          <elementDefinition Id="0e3cb118-fa80-40f4-8e2f-857b2ad7123c" />
+        </profileInstance>
+        <elementDefinition Id="d7e6d1d6-1442-4d88-9a4f-3e2231f9a312" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

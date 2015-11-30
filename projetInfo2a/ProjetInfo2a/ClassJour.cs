@@ -8,74 +8,49 @@ namespace ProjetInfo2a
 {
     class ClassJour
     {
-        private int numero
+        private int _numero;
+        private string _statut; // passé/prst/futur
+        public Dictionary<double[,], Activite> _activites;
+        public ClassCompteRendu _compteRendu;
+        public ClassMission _mission;
+
+        public bool getSortieExte()
         {
-            get;
-            set;
+            // return true ssi une des activités de _activites return true aussi
+            return false;
         }
 
-        /// <summary>
-        /// passé/prst/futur
-        /// </summary>
-        private string statut
+        public void ajouterActivite(ClassActivite act)
         {
-            get;
-            set;
+            /*
+            insere une entrée dans le dictionnaire _activites :
+            value = activite, key=[activite.hDeb, activite.hFin]
+            */
         }
 
-        public virtual IEnumerable<Activite> Activites
-        {
-            get;
-            set;
-        }
-
-        public virtual ClassCompteRendu CompteRendu
-        {
-            get;
-            set;
-        }
-
-
-
-        public virtual ClassMission Mission
-        {
-            get;
-            set;
-        }
-
-        public virtual bool sortieExte()
+        public void supprActivite()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual void ajouterActivite(ClassActivite act)
+        public void modifAcitivite()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual void supprActivite()
+        public void setStatut(String newStatut)
         {
-            throw new System.NotImplementedException();
+            _statut = newStatut;
         }
 
-        public virtual void modifAcitivite()
+        public String getStatut()
         {
-            throw new System.NotImplementedException();
+            return _statut;
         }
 
-        public virtual void setStatut()
+        public void setCR(ClassCompteRendu CR)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void getStatut()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void ajouterCR()
-        {
-            throw new System.NotImplementedException();
+            _compteRendu = CR;
         }
     }
 }

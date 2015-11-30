@@ -28,29 +28,29 @@ namespace ProjetInfo2a
         }
 
         // accesseurs
-        public virtual List<String> getActivites()
+        public List<String> getActivites()
         {
-            throw new System.NotImplementedException();
+            return _activites;
         }
 
-        public virtual int getJourJ()
+        public int getJourJ()
         {
-            throw new System.NotImplementedException();
+            return _jourJ;
         }
 
-        public virtual DateTime getT0()
+        public DateTime getT0()
         {
-            throw new System.NotImplementedException();
+            return _t0;
         }
 
-        public virtual int getDuree()
+        public int getDuree()
         {
-            throw new System.NotImplementedException();
+            return _duree;
         }
 
-        public virtual void setDuree(int nbJours)
+        public void setDuree(int nbJours)
         {
-            throw new System.NotImplementedException();
+            _duree = nbJours;
         }
 
 
@@ -69,9 +69,13 @@ namespace ProjetInfo2a
                 MessageBox.Show(message);
                 return;
             }
+
+            // désérialisations
             load_mission(xmlDoc);
             load_activites(xmlDoc);
             load_lieu(xmlDoc);
+            load_astronautes(xmlDoc);
+            load_journeeDefaut(xmlDoc);
 
         }
 

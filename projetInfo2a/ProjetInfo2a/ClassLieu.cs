@@ -14,42 +14,42 @@ namespace ProjetInfo2a
         private double[,] _position; //coordonnées x,y du lieu sur la carte de la zone
 
 
-        public virtual void setPosition(double x, double y)
+        public void setPosition(double x, double y)
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual double[,] getPosition()
+        public double[,] getPosition()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual string getNom()
+        public string getNom()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual void setNom(String newNom)
+        public void setNom(String newNom)
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual string getCarte()
+        public string getCarte()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual void setCarte(String newCarte)
+        public void setCarte(String newCarte)
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual string getEchelle()
+        public string getEchelle()
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual void setEchelle(int newEchelle)
+        public void setEchelle(int newEchelle)
         {
             throw new System.NotImplementedException();
         }

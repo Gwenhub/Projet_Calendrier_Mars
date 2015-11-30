@@ -8,93 +8,57 @@ namespace ProjetInfo2a
 {
     class ClassActivite
     {
-        private double heureDebut
+        private double _heureDebut;
+        private double _heureFin;
+        private List<String> _astronautes;
+        private string _descriptif;
+        private string _categorie;
+        private bool _sortieExt;
+        public ClassLieu _lieu;
+        public Jour _date;
+        
+        public String getCategorie()
         {
-            get;
-            set;
+            return _categorie;
+        }
+        public void setCategorie( string newCat)
+        {
+            _categorie = newCat;
         }
 
-        private double heureFin
+        public bool getSortieExt()
         {
-            get;
-            set;
+            return _sortieExt;
         }
 
-        private List<String> Astronautes
+        public void setSortieExt(bool newSortie)
         {
-            get;
-            set;
+            _sortieExt = newSortie;
         }
 
-        private string Descriptif
+        public List<String> getAstronautes()
         {
-            get;
-            set;
+            return _astronautes;
         }
 
-        /// <summary>
-        /// valeur prise dans la List Activités de Mission
-        /// </summary>
-        private string Categorie
+        public double getHeureDeb()
         {
-            get;
-            set;
+            return _heureDebut;
         }
 
-        private bool SortieExt
+        public double getHeureFin()
         {
-            get;
-            set;
+            return _heureFin;
         }
 
-        public ClassLieu Lieu
+        public void setHeureDeb(double newHdeb)
         {
-            get;
-            set;
+            _heureDebut = newHdeb;
         }
 
-        public virtual Jour Date
+        public void setHeureFin(double newHfin)
         {
-            get;
-            set;
-        }
-
-        public String getCategorie() { return Categorie; }
-        public void setCategorie( string newCat) { }
-
-        public virtual void getSortieExt()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void setSortieExt()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual List<String> getAstronautes()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual double getHeureDeb()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual double getHeureFin()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void setHeureDeb(double newHdeb)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void setHeureFin(double newHfin)
-        {
-            throw new System.NotImplementedException();
+            _heureFin = newHfin;
         }
     }
 }

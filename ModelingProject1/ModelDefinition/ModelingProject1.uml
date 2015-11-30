@@ -509,7 +509,7 @@
         <ownedOperationsInternal>
           <operation
             Id="0d5398fa-b8e3-4e53-9ede-ca6d67d68b90"
-            name="sortieExte"
+            name="getSortieExte"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

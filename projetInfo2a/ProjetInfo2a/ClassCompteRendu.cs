@@ -8,48 +8,29 @@ namespace ProjetInfo2a
 {
     class ClassCompteRendu
     {
-        private string titre
+        private string _titre;
+        private string _contenu;
+        private static int _nbCaractMax;
+        public Jour _date;
+
+        public void setContenu(String newContenu)
         {
-            get;
-            set;
+            _contenu = newContenu;
         }
 
-        private string contenu
+        public string getContenu()
         {
-            get;
-            set;
+            return _contenu;
         }
 
-        private static int nbCaractMax
+        public string getTitre()
         {
-            get;
-            set;
+            return _titre;
         }
 
-        public virtual Jour Date
+        public void setTitre(String newTitre)
         {
-            get;
-            set;
-        }
-
-        public virtual void setCR(String newCR)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual string getCR()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual string getTitre()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public virtual void setTitre(String newTitre)
-        {
-            throw new System.NotImplementedException();
+            _titre = newTitre;
         }
     }
 }
