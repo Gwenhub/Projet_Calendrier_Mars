@@ -5,7 +5,7 @@
       Height="800" Width="600"
 	Title="Exploration" ShowsNavigationUI="False">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="729*"/>
             <RowDefinition Height="71*"/>

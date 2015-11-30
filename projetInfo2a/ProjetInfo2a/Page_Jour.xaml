@@ -5,7 +5,7 @@
       Height="800" Width="600"
 	Title="Jour" ShowsNavigationUI="False">
 
-    <Grid>
+    <Grid Background="White">
         <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Jour X" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
         <Button Content="Voir le compte-rendu" Name="Consulter_Compte_Rendu" Margin="465,0,-168,0" VerticalAlignment="Center" Width="303" Cursor="None" Background="#FF81CFE0" FontSize="18" FontWeight="Bold" BorderBrush="#FF34495E" Foreground="#FF34495E" HorizontalAlignment="Center" Click="Consulter_CR"/>
         <DataGrid HorizontalAlignment="Left" Margin="-310,192,0,0" VerticalAlignment="Top" Width="304"/>

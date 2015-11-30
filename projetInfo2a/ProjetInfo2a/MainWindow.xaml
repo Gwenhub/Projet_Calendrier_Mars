@@ -47,7 +47,7 @@
         </Menu>
         <DockPanel>
         <Frame x:Name="_mainFrame" 
-               Source="Accueil.xaml"
+               Source="Page_Accueil.xaml"
          NavigationUIVisibility="Hidden"/>
     </DockPanel>
     </Grid>

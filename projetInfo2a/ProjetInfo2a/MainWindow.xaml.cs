@@ -34,19 +34,19 @@ namespace ProjetInfo2a
         }
         private void Accueil_Click(object sender, RoutedEventArgs e)
         {
-            _mainFrame.Source = new Uri("Accueil.xaml", UriKind.Relative);
+            _mainFrame.Source = new Uri("Page_Accueil.xaml", UriKind.Relative);
         }
         private void Planning_Click(object sender, RoutedEventArgs e)
         {
-            _mainFrame.Source = new Uri("Planning.xaml", UriKind.Relative);
+            _mainFrame.Source = new Uri("Page_Planning.xaml", UriKind.Relative);
         }
         private void Recherche_Click(object sender, RoutedEventArgs e)
         {
-            _mainFrame.Source = new Uri("Recherche.xaml", UriKind.Relative);
+            _mainFrame.Source = new Uri("Page_Recherche.xaml", UriKind.Relative);
         }
         private void Exploration_Click(object sender, RoutedEventArgs e)
         {
-            _mainFrame.Source = new Uri("Exploration.xaml", UriKind.Relative);
+            _mainFrame.Source = new Uri("Page_Exploration.xaml", UriKind.Relative);
         }
 
     }
