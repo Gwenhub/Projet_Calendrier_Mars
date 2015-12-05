@@ -1,4 +1,4 @@
-﻿<Page x:Class="ProjetInfo2a.Compte_Rendu"
+﻿<Page x:Class="ProjetInfo2a.Page_Compte_Rendu"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"

@@ -18,22 +18,22 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Jour.xaml
     /// </summary>
-    public partial class Jour : Page
+    public partial class Page_Jour : Page
     {
-        public Jour()
+        public Page_Jour()
         {
             InitializeComponent();
         }
 
         private void Consulter_CR(object sender, RoutedEventArgs e)
         {
-            Compte_Rendu cr = new Compte_Rendu();
+            Page_Compte_Rendu cr = new Page_Compte_Rendu();
             this.NavigationService.Navigate(cr);
         }
 
         private void Voir_Activite(object sender, MouseButtonEventArgs e)
         {
-            Activite activite = new Activite();
+            Page_Activite activite = new Page_Activite();
             this.NavigationService.Navigate(activite);
         }
 

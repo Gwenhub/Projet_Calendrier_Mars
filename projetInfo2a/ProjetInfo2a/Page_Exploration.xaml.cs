@@ -18,9 +18,9 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Exploration.xaml
     /// </summary>
-    public partial class Exploration : Page
+    public partial class Page_Exploration : Page
     {
-        public Exploration()
+        public Page_Exploration()
         {
             InitializeComponent();
         }

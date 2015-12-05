@@ -11,7 +11,7 @@ namespace ProjetInfo2a
         private string _titre;
         private string _contenu;
         private static int _nbCaractMax;
-        public Jour _date;
+        public ClassJour _date;
 
         public void setContenu(String newContenu)
         {

@@ -32,7 +32,7 @@ namespace ProjetInfo2a
         {
             return _activites;
         }
-
+       
         public int getJourJ()
         {
             return _jourJ;
@@ -53,6 +53,13 @@ namespace ProjetInfo2a
             _duree = nbJours;
         }
 
+        // recupère le numéro du jour Martien courant à partir de la date Terrienne
+        public void setJourJ()
+        {
+            TimeSpan tpsEcoule = DateTime.Today - _t0;
+            double tpsEcouleHeures = tpsEcoule.TotalHours;
+            _jourJ = (int)(1 + tpsEcouleHeures / 24.4);
+        }
 
         // désérialisation globale qui appelle les methodes de chaque champ de Mission
         public void chargerInfo()
@@ -152,17 +159,20 @@ namespace ProjetInfo2a
         //désérialisation de <astonautes>
         private void load_astronautes(XmlDocument doc)
         {
+            XmlNode n = doc.SelectSingleNode("/informations/astronautes/effectif");
+            XmlAttribute xml_attr = n.Attributes["nb"];
+            _nbAstraunautes = int.Parse(xml_attr.Value);
+
             _astronautes = new List<String>();
             XmlNodeList nl = doc.SelectNodes("/informations/astronautes/astronaute");
             foreach (XmlNode node in nl)
             {
                 String astronaute;
-                XmlAttribute xml_attr = node.Attributes["nom"];
+                xml_attr = node.Attributes["nom"];
                 astronaute = xml_attr.Value;
 
                 _astronautes.Add(astronaute);
             }
-            _nbAstraunautes = _astronautes.Count();
         }
 
         // désérialisation de journeeDefaut
@@ -196,6 +206,5 @@ namespace ProjetInfo2a
                 _planning.Add(i, _journeeDefaut);
             }
         }
-
     }
 }

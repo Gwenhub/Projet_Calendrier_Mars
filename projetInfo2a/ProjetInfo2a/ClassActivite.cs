@@ -15,7 +15,7 @@ namespace ProjetInfo2a
         private string _categorie;
         private bool _sortieExt;
         public ClassLieu _lieu;
-        public Jour _date;
+        public ClassJour _date; 
         
         public String getCategorie()
         {

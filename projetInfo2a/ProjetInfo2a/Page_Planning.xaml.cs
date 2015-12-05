@@ -18,16 +18,16 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Planning.xaml
     /// </summary>
-    public partial class Planning : Page
+    public partial class Page_Planning : Page
     {
-        public Planning()
+        public Page_Planning()
         {
             InitializeComponent();
         }
 
         private void AfficherJourJ(object sender, MouseButtonEventArgs e)
         {
-            Jour jour = new Jour();
+            Page_Jour jour = new Page_Jour();
             this.NavigationService.Navigate(jour);
         }
         

@@ -18,9 +18,9 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Recherche.xaml
     /// </summary>
-    public partial class Recherche : Page
+    public partial class Page_Recherche : Page
     {
-        public Recherche()
+        public Page_Recherche()
         {
             InitializeComponent();
         }

@@ -18,16 +18,16 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Accueil.xaml
     /// </summary>
-    public partial class Accueil : Page
+    public partial class Page_Accueil : Page
     {
-        public Accueil()
+        public Page_Accueil()
         {
             InitializeComponent();
         }
 
         private void AfficherPlanning(object sender, RoutedEventArgs e)
         {
-            Planning planning = new Planning();
+            Page_Planning planning = new Page_Planning();
             this.NavigationService.Navigate(planning);
             /*Compte_Rendu cr = new Compte_Rendu();
             this.NavigationService.Navigate(cr);*/
@@ -35,13 +35,13 @@ namespace ProjetInfo2a
         }
         private void AfficherExploration(object sender, RoutedEventArgs e)
         {
-            Exploration exploration = new Exploration();
+            Page_Exploration exploration = new Page_Exploration();
             this.NavigationService.Navigate(exploration);
         }
 
         private void AfficherRecherche(object sender, RoutedEventArgs e)
         {
-            Recherche recherche = new Recherche();
+            Page_Recherche recherche = new Page_Recherche();
             this.NavigationService.Navigate(recherche);
         }
 

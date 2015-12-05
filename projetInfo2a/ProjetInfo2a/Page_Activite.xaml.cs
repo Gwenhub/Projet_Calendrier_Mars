@@ -18,16 +18,16 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Activite.xaml
     /// </summary>
-    public partial class Activite : Page
+    public partial class Page_Activite : Page
     {
-        public Activite()
+        public Page_Activite()
         {
             InitializeComponent();
         }
 
         private void Bouton_Carte(object sender, RoutedEventArgs e)
         {
-            Exploration exploration = new Exploration();
+            Page_Exploration exploration = new Page_Exploration();
             this.NavigationService.Navigate(exploration);
 
         }

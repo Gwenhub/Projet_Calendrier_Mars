@@ -18,9 +18,9 @@ namespace ProjetInfo2a
     /// <summary>
     /// Logique d'interaction pour Compte_Rendu.xaml
     /// </summary>
-    public partial class Compte_Rendu : Page
+    public partial class Page_Compte_Rendu : Page
     {
-        public Compte_Rendu()
+        public Page_Compte_Rendu()
         {
             InitializeComponent();
         }
