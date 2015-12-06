@@ -13,8 +13,14 @@ namespace ProjetInfo2a
         private static int _nbCaractMax;
         public ClassJour _date;
 
+        public ClassCompteRendu()
+        {
+            _nbCaractMax = 1000;
+        }
+
         public void setContenu(String newContenu)
         {
+            if (newContenu.Length<=_nbCaractMax)
             _contenu = newContenu;
         }
 
@@ -31,6 +37,15 @@ namespace ProjetInfo2a
         public void setTitre(String newTitre)
         {
             _titre = newTitre;
+        }
+
+        public void setDate(ClassJour newDate)
+        {
+            _date = newDate;
+        }
+        public ClassJour getDate()
+        {
+            return _date;
         }
     }
 }

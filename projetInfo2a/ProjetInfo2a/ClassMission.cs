@@ -23,6 +23,12 @@ namespace ProjetInfo2a
         //constructeur par défaut, qui initialise la mission en chargeant les données
         public ClassMission()
         {
+            _activites = new List<string>();
+            _astronautes = new List<string>();
+            _lieu = new ClassLieu();
+            _journeeDefaut = new ClassJour(this);
+            _planning = new Dictionary<int, ClassJour>();
+
             chargerInfo();
             initialisePlanning();
         }
@@ -178,7 +184,7 @@ namespace ProjetInfo2a
         // désérialisation de journeeDefaut
         private void load_journeeDefaut(XmlDocument doc)
         {
-            _journeeDefaut = new ClassJour();
+            _journeeDefaut = new ClassJour(this);
 
             XmlNodeList nl = doc.SelectNodes("/informations/journeeDefaut/activite");
             foreach (XmlNode node in nl)

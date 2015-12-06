@@ -11,47 +11,52 @@ namespace ProjetInfo2a
         private String _carte;
         private int _echelleMpx;
         private String _nom;
-        private double[,] _position; //coordonnées x,y du lieu sur la carte de la zone
+        private double[] _position; //coordonnées x,y du lieu sur la carte de la zone
 
+        public ClassLieu()
+        {
+            _position = new double[2];
+        }
 
         public void setPosition(double x, double y)
         {
-            throw new System.NotImplementedException();
+            _position[0] = x;
+            _position[1] = y;
         }
 
-        public double[,] getPosition()
+        public double[] getPosition()
         {
-            throw new System.NotImplementedException();
+            return _position;
         }
 
         public string getNom()
         {
-            throw new System.NotImplementedException();
+            return _nom;
         }
 
         public void setNom(String newNom)
         {
-            throw new System.NotImplementedException();
+            _nom = newNom;
         }
 
         public string getCarte()
         {
-            throw new System.NotImplementedException();
+            return _carte;
         }
 
         public void setCarte(String newCarte)
         {
-            throw new System.NotImplementedException();
+            _carte = newCarte;
         }
 
-        public string getEchelle()
+        public int getEchelle()
         {
-            throw new System.NotImplementedException();
+            return _echelleMpx;
         }
 
         public void setEchelle(int newEchelle)
         {
-            throw new System.NotImplementedException();
+            _echelleMpx = newEchelle;
         }
     }
 }
