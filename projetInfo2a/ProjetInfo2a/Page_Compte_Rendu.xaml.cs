@@ -31,18 +31,20 @@ namespace ProjetInfo2a
 
         private void Modifier_CR(object sender, RoutedEventArgs e)
         {
-            Modifier_Compte_Rendu.Visibility = Visibility.Hidden;
-            Enregistrer_Compte_Rendu.Visibility = Visibility.Visible;
+            Bouton_Modifier_CR.Visibility = Visibility.Hidden;
+            Bouton_Enregistrer_CR.Visibility = Visibility.Visible;
             Texte_1000_caract.Visibility = Visibility.Visible;
-            CR.Visibility = Visibility.Visible;
+            Case_Texte_CR.Visibility = Visibility.Visible;
+            Case_Texte_CR_MAJ.Visibility = Visibility.Hidden;
         }
 
         private void Enregistrer_CR(object sender, RoutedEventArgs e)
         {
-            Enregistrer_Compte_Rendu.Visibility = Visibility.Hidden;
+            Bouton_Enregistrer_CR.Visibility = Visibility.Hidden;
             Texte_1000_caract.Visibility = Visibility.Hidden;
-            CR.Visibility = Visibility.Hidden;
-            Modifier_Compte_Rendu.Visibility = Visibility.Visible;
+            Case_Texte_CR.Visibility = Visibility.Hidden;
+            Bouton_Modifier_CR.Visibility = Visibility.Visible;
+            Case_Texte_CR_MAJ.Visibility = Visibility.Visible;
         }
 
     }

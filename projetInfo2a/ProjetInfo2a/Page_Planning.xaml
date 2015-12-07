@@ -33,8 +33,8 @@
         <Label x:Name="Jour_20_Planning" Content="J-19" HorizontalAlignment="Left" Margin="755,78,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
         <Label Content="J-20" HorizontalAlignment="Left" Margin="880,78,0,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
         <Label Content="J-21" HorizontalAlignment="Right" Margin="0,78,255,0" VerticalAlignment="Top" Width="120" Height="120" Background="#FF19B5FE" Foreground="White" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
-        <Image x:Name="Boutton_Periode_Precedente" Margin="160,450,1165,0" Source="previous.png" VerticalAlignment="Top" Stretch="Fill" RenderTransformOrigin="0.275,0.725" Height="55" Width="55" Grid.RowSpan="2"/>
-        <Image x:Name="Boutton_Periode_Suivante" Margin="1165,450,160,0" Source="next.png" VerticalAlignment="Top" Stretch="Fill" Height="55" RenderTransformOrigin="0.275,0.725" Width="55" Grid.RowSpan="2"/>
+        <Image x:Name="Bouton_Periode_Precedente" Margin="160,450,1165,0" Source="previous.png" VerticalAlignment="Top" Stretch="Fill" RenderTransformOrigin="0.275,0.725" Height="55" Width="55" Grid.RowSpan="2"/>
+        <Image x:Name="Bouton_Periode_Suivante" Margin="1165,450,160,0" Source="next.png" VerticalAlignment="Top" Stretch="Fill" Height="55" RenderTransformOrigin="0.275,0.725" Width="55" Grid.RowSpan="2"/>
         <Image x:Name="Astronaute" Height="32" Source="astronaut.png" Stretch="Fill" Width="32" Margin="70,270,0,0"/>
 
 
