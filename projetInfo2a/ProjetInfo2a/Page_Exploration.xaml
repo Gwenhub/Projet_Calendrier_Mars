@@ -12,7 +12,7 @@
             <RowDefinition Height="17*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" Margin="146,100,147,0" TextWrapping="Wrap" Text="Exploration" VerticalAlignment="Top" FontSize="36" TextAlignment="Center" Width="600"/>
-        <Image Margin="0,194,65,0" HorizontalAlignment="Right" VerticalAlignment="Top" Source="map.jpg" Stretch="Fill" Width="1000" Grid.RowSpan="2" Height="462"/>
+        <Image x:Name="Carte" Margin="0,194,65,0" HorizontalAlignment="Right" VerticalAlignment="Top" Source="map.jpg" Stretch="Fill" Width="1000" Grid.RowSpan="2" Height="462"/>
         <TextBlock HorizontalAlignment="Left" Margin="57,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="119" FontSize="18"><Run Text="Légende"/><Run Language="fr-fr" Text=" :"/></TextBlock>
         <Image Margin="81,352,1269,318" Source="communication.png" Stretch="Fill" RenderTransformOrigin="-1.094,0.344" Width="30" Height="30" Grid.RowSpan="2"/>
         <Image Margin="81,241,1269,109" Source="living.png" Stretch="Fill" Width="30" Height="30"/>
