@@ -21,9 +21,6 @@ namespace ProjetInfo2a
             app.InitializeComponent();
             app.Run();
 
-
-            ClassMission laMission = new ClassMission();
-            
         }
     }
 }

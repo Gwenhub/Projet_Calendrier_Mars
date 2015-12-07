@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetInfo2a
 {
-    class ClassJour
+    public class ClassJour
     {
         private int _numero;
         private string _statut; // passé/prst/futur

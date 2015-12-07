@@ -20,15 +20,24 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class Page_Planning : Page
     {
-        public Page_Planning()
+        ClassMission _mission;
+
+        public Page_Planning(ClassMission mission)
         {
+            _mission = mission;
+
             InitializeComponent();
         }
 
         private void AfficherJourJ(object sender, MouseButtonEventArgs e)
         {
-            Page_Jour jour = new Page_Jour();
+            
+            int nbJour = (int)(sender as Label).Content;
+            ClassJour trouveJour = new ClassJour(_mission);
+            trouveJour=_mission.getPlanning()[nbJour];
+            Page_Jour jour = new Page_Jour(trouveJour);
             this.NavigationService.Navigate(jour);
+            
         }
         
     }

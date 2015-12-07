@@ -20,8 +20,12 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class Page_Jour : Page
     {
-        public Page_Jour()
+        ClassJour _jour;
+
+        public Page_Jour(ClassJour jour)
         {
+            _jour = jour;
+
             InitializeComponent();
         }
 

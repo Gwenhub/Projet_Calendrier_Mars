@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetInfo2a
 {
-    class ClassCompteRendu
+    public class ClassCompteRendu
     {
         private string _titre;
         private string _contenu;

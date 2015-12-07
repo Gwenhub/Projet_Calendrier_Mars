@@ -23,15 +23,26 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        ClassMission _mission;
+
         public MainWindow()
         {
+            _mission = new ClassMission();
+
             InitializeComponent();
+            
             Page_Accueil accueil = new Page_Accueil();
-            Page_Planning planning = new Page_Planning();
+            Page_Planning planning = new Page_Planning(_mission);
             Page_Recherche recherche = new Page_Recherche();
             Page_Exploration exploration = new Page_Exploration();
-
+            
         }
+
+        public ClassMission getMission()
+        {
+            return _mission;
+        }
+
         private void Accueil_Click(object sender, RoutedEventArgs e)
         {
             _mainFrame.Source = new Uri("Page_Accueil.xaml", UriKind.Relative);

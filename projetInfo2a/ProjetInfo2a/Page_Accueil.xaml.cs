@@ -20,14 +20,22 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class Page_Accueil : Page
     {
+        ClassMission _mission;
+
         public Page_Accueil()
         {
+            InitializeComponent();
+        }
+        public Page_Accueil(ClassMission mission)
+        {
+            _mission = mission;
+
             InitializeComponent();
         }
 
         private void AfficherPlanning(object sender, RoutedEventArgs e)
         {
-            Page_Planning planning = new Page_Planning();
+            Page_Planning planning = new Page_Planning(this._mission);
             this.NavigationService.Navigate(planning);
             /*Compte_Rendu cr = new Compte_Rendu();
             this.NavigationService.Navigate(cr);*/

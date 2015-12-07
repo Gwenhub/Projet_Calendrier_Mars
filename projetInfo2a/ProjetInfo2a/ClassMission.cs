@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace ProjetInfo2a
 {
-    class ClassMission
+    public class ClassMission
     {
         private List<String> _activites;
         private int _nbAstraunautes;
@@ -57,6 +57,10 @@ namespace ProjetInfo2a
         public void setDuree(int nbJours)
         {
             _duree = nbJours;
+        }
+        public Dictionary<int,ClassJour> getPlanning()
+        {
+            return _planning;
         }
 
         // recupère le numéro du jour Martien courant à partir de la date Terrienne

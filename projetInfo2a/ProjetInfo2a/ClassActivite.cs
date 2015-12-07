@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetInfo2a
 {
-    class ClassActivite
+    public class ClassActivite
     {
         private double _heureDebut;
         private double _heureFin;
