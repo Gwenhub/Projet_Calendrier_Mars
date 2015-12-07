@@ -41,7 +41,25 @@ namespace ProjetInfo2a
         {
             _numero = newNum;
         }
+        public void setStatut(String newStatut)
+        {
+            _statut = newStatut;
+        }
 
+        public String getStatut()
+        {
+            return _statut;
+        }
+
+        public void setCR(ClassCompteRendu CR)
+        {
+            _compteRendu = CR;
+        }
+
+        public ClassCompteRendu getCR()
+        {
+            return _compteRendu;
+        }
         public Dictionary<double[], ClassActivite> getActivite()
         {
             return _activites;
@@ -76,21 +94,6 @@ namespace ProjetInfo2a
                 _activites.Remove(crenau);
                 ajouterActivite(newAct);
             }
-        }
-
-        public void setStatut(String newStatut)
-        {
-            _statut = newStatut;
-        }
-
-        public String getStatut()
-        {
-            return _statut;
-        }
-
-        public void setCR(ClassCompteRendu CR)
-        {
-            _compteRendu = CR;
         }
 
         public void defineStatut()

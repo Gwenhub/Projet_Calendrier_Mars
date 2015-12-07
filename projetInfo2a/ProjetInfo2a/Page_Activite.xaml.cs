@@ -20,8 +20,12 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class Page_Activite : Page
     {
-        public Page_Activite()
+        ClassActivite _activite;
+
+        public Page_Activite(ClassActivite activite)
         {
+            _activite = activite;
+
             InitializeComponent();
         }
 

@@ -20,8 +20,12 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class Page_Compte_Rendu : Page
     {
-        public Page_Compte_Rendu()
+        ClassCompteRendu _cr;
+
+        public Page_Compte_Rendu(ClassCompteRendu cr)
         {
+            _cr = cr;
+
             InitializeComponent();
         }
 

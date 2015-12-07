@@ -8,6 +8,7 @@ namespace ProjetInfo2a
 {
     class Program
     {
+        /*
         /// <summary>
         /// Application Entry Point.
         /// </summary>
@@ -22,5 +23,6 @@ namespace ProjetInfo2a
             app.Run();
 
         }
+        */
     }
 }

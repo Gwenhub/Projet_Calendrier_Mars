@@ -29,15 +29,25 @@ namespace ProjetInfo2a
             InitializeComponent();
         }
 
-        private void Consulter_CR(object sender, RoutedEventArgs e)
+        private void afficheActivites()
         {
-            Page_Compte_Rendu cr = new Page_Compte_Rendu();
-            this.NavigationService.Navigate(cr);
+
+            DataGridActivites.ItemsSource = _jour.getActivite();
+
         }
 
-        private void Voir_Activite(object sender, MouseButtonEventArgs e)
+        private void Consulter_CR(object sender, RoutedEventArgs e)
         {
-            Page_Activite activite = new Page_Activite();
+            ClassCompteRendu cr = _jour.getCR();
+            Page_Compte_Rendu page_cr = new Page_Compte_Rendu(cr);
+            this.NavigationService.Navigate(page_cr);
+        }
+
+        private void Voir_Activite(double hDeb, double hFin, MouseButtonEventArgs e)
+        {
+            double[] creneau = new double[2] { hDeb, hFin };
+            ClassActivite act = _jour.getActivite()[creneau];
+            Page_Activite activite = new Page_Activite(act);
             this.NavigationService.Navigate(activite);
         }
 

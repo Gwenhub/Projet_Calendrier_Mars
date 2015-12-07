@@ -46,13 +46,13 @@
     <qctivite categorie="Emergency" nom="Emergency"/>
   </activites>
   <journeeDefaut>
-    <activite hdebut='0' hfin='7' categorie="Living" nom="Sleeping"/>
-    <activite hdebut='7' hfin='8' categorie="Living" nom="Eating"/>
-    <activite hdebut='8' hfin='12' categorie="Living" nom="Private"/>
-    <activite hdebut='12' hfin='14' categorie="Living" nom="Eating"/>
-    <activite hdebut='14' hfin='19' categorie="Living" nom="Private"/>
-    <activite hdebut='19' hfin='21' categorie="Living" nom="Eating"/>
-    <activite hdebut='21' hfin='23' categorie="Living" nom="Private"/>
-    <activite hdebut='23' hfin='24.40' categorie="Living" nom="Sleeping"/>
+    <activite hdebut="0" hfin="7" categorie="Living" nom="Sleeping"/>
+    <activite hdebut="7" hfin="8" categorie="Living" nom="Eating"/>
+    <activite hdebut="8" hfin="12" categorie="Living" nom="Private"/>
+    <activite hdebut="12" hfin="14" categorie="Living" nom="Eating"/>
+    <activite hdebut="14" hfin="19" categorie="Living" nom="Private"/>
+    <activite hdebut="19" hfin="21" categorie="Living" nom="Eating"/>
+    <activite hdebut="21" hfin="23" categorie="Living" nom="Private"/>
+    <activite hdebut="23" hfin="24,40" categorie="Living" nom="Sleeping"/>
   </journeeDefaut>
 </informations>

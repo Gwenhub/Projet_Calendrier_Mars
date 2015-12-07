@@ -78,7 +78,7 @@ namespace ProjetInfo2a
 
             try
             {
-                xmlDoc.Load("infosGenerales.xml"); //stocké dans le bin/debug
+                xmlDoc.Load("../../Data/infosGenerales.xml"); 
             }
             catch
             {
@@ -155,6 +155,7 @@ namespace ProjetInfo2a
                 String activite = xml_attr.Value;
 
                 xml_attr = node.Attributes["sous-categorie"];
+                if (xml_attr!=null)
                 activite += " / " + xml_attr.Value;
 
                 //idem pour l'attribut nom 
@@ -200,9 +201,9 @@ namespace ProjetInfo2a
                 activite.setCategorie(activite.getCategorie() + " / " + xml_attr);
 
                 xml_attr = node.Attributes["hdebut"];
-                activite.setHeureDeb(int.Parse(xml_attr.Value));
+                activite.setHeureDeb(double.Parse(xml_attr.Value));
                 xml_attr = node.Attributes["hfin"];
-                activite.setHeureFin(int.Parse(xml_attr.Value));
+                activite.setHeureFin(double.Parse(xml_attr.Value));
 
                 _journeeDefaut.ajouterActivite(activite);
             }
