@@ -41,5 +41,6 @@ namespace ProjetInfo2a
             this.NavigationService.Navigate(activite);
         }
 
+
     }
 }
