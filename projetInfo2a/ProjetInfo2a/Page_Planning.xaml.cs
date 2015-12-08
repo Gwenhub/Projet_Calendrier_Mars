@@ -31,13 +31,14 @@ namespace ProjetInfo2a
 
         private void AfficherJourJ(object sender, MouseButtonEventArgs e)
         {
-            
-            int nbJour = (int)(sender as Label).Content;
-            ClassJour trouveJour = new ClassJour(_mission);
-            trouveJour=_mission.getPlanning()[nbJour];
+            Label labelJour = sender as Label;
+            int nbJour = int.Parse(labelJour.Content.ToString());
+            MessageBox.Show("vous cherchez à afficher le jour "+ 
+                _mission.getPlanning()[11].getNumero().ToString(), "petit test");
+            /*ClassJour trouveJour =_mission.getPlanning()[nbJour];
             Page_Jour jour = new Page_Jour(trouveJour);
             this.NavigationService.Navigate(jour);
-            
+            */
         }
         
     }

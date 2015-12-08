@@ -23,19 +23,25 @@ namespace ProjetInfo2a
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        ClassMission _mission;
+        private ClassMission _mission;
 
         public MainWindow()
         {
             _mission = new ClassMission();
+            _mission.chargerInfo();
+            _mission.initialisePlanning();
 
             InitializeComponent();
-            
-            Page_Accueil accueil = new Page_Accueil();
+
+            ////////   petit test
+            //MessageBox.Show(_mission.getPlanning()[150].getNumero().ToString(),"petit test");
+           
+            // Page_Accueil accueil = new Page_Accueil(_mission);
+            /*
             Page_Planning planning = new Page_Planning(_mission);
             Page_Recherche recherche = new Page_Recherche();
             Page_Exploration exploration = new Page_Exploration();
-            
+            */
         }
 
         public ClassMission getMission()

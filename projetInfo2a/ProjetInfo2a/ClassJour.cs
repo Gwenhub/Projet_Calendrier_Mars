@@ -8,15 +8,18 @@ namespace ProjetInfo2a
 {
     public class ClassJour
     {
+        private static int compteurJours=0;
         private int _numero;
         private string _statut; // passé/prst/futur
         public Dictionary<double[], ClassActivite> _activites;
         public ClassCompteRendu _compteRendu;
-        public static ClassMission _mission;
+        public ClassMission _mission;
 
 
         public ClassJour(ClassMission laMission)
         {
+            _numero = compteurJours;  //laMission._journeeDefaut sera le jour 0 (premier objet instancié)
+            compteurJours++;  // les prochains jours auront le num correspondant à leur ID
             _mission = laMission;
             _activites = new Dictionary<double[], ClassActivite>();
         }
@@ -60,9 +63,13 @@ namespace ProjetInfo2a
         {
             return _compteRendu;
         }
-        public Dictionary<double[], ClassActivite> getActivite()
+        public Dictionary<double[], ClassActivite> getActivites()
         {
             return _activites;
+        }
+        public void setActivites(Dictionary<double[], ClassActivite> newActivites)
+        {
+            _activites=newActivites;
         }
 
         // insere une activité au dico et lui donne pr clef son couple hDebut, hFin

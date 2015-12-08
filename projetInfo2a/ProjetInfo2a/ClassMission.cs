@@ -25,12 +25,13 @@ namespace ProjetInfo2a
         {
             _activites = new List<string>();
             _astronautes = new List<string>();
-            _lieu = new ClassLieu();
-            _journeeDefaut = new ClassJour(this);
+            _lieu = new ClassLieu();            
             _planning = new Dictionary<int, ClassJour>();
-
+            
+            /*
             chargerInfo();
             initialisePlanning();
+            */    
         }
 
         // accesseurs
@@ -209,12 +210,14 @@ namespace ProjetInfo2a
             }
         }
 
-        // remplissage du planning par défaut
+        // remplissage du planning par défaut : 500 journées initialisées par défaut
         public void initialisePlanning()
         {
             for (int i = 1; i <= _duree; i++)
             {
-                _planning.Add(i, _journeeDefaut);
+                ClassJour newJourDefaut = new ClassJour(this);
+                newJourDefaut.setActivites(_journeeDefaut.getActivites());
+                _planning.Add(i, newJourDefaut);
             }
         }
     }

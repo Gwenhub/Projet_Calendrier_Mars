@@ -21,11 +21,13 @@ namespace ProjetInfo2a
     public partial class Page_Accueil : Page
     {
         ClassMission _mission;
-
+        
         public Page_Accueil()
-        {
+        {            
             InitializeComponent();
         }
+        
+        
         public Page_Accueil(ClassMission mission)
         {
             _mission = mission;
